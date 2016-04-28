@@ -1,0 +1,38 @@
+[
+		{
+			"name": "yossi azoulay",
+			"grade": "100",
+			"id": "300",
+			"year": "2016"
+		},
+		{
+			"name": "noam roiz",
+			"grade": "80",
+			"id": "301",
+			"year": "2000"
+		},
+		{
+			"name": "sami boreks",
+			"grade": "70",
+			"id": "302",
+			"year": "2005"
+		},
+		{
+			"name": "orna daza",
+			"grade": "60",
+			"id": "303",
+			"year": "1980"
+		},
+		{
+			"name": "moshe yanai",
+			"grade": "50",
+			"id": "303",
+			"year": "1950"
+		},
+		{
+			"name": "foshiko azoulay",
+			"grade": "100",
+			"id": "304",
+			"year": "2015"
+		}
+	]
