@@ -1,6 +1,4 @@
-# Project Title
-
-Web-Services-ex1
+# Web-Services-ex1
 
 ## Getting Started
 
