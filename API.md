@@ -1,6 +1,4 @@
-# Project Title
-
-Web-Services-ex1
+# Web-Services-ex1
 
 ## Getting Started
 
@@ -8,7 +6,7 @@ instructions: In the URL insert the following to receive
 
 ### Show All students
 
-URL: /students (defualt one)
+URL: /students (default one)
 
 ```
 https://infinite-refuge-73334.herokuapp.com/students
