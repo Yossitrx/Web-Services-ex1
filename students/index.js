@@ -1,34 +1,31 @@
 'use strict'
-var EventEmitter = require("events");
-//var eventConfig = require("../config");
-//var moment = require('moment');
-var fileSystem = require("fs");
 
+var fileSystem = require("fs");
 var studentData = ("./students/studentsData.json");
 
 
 module.exports = class student {
 
 	constructor(){
-		//super();
+		
 	}
 	showAllStudents(){
 		console.log("Show All students");
 		var data = fileSystem.readFileSync(studentData);
 		console.log("students: " + data );
-		var jsonContent = JSON.parse(data);
-		return jsonContent;
+		var jsonData = JSON.parse(data);
+		return jsonData;
 	}
 	showStudentsById(id){
 		console.log("Show student by Id");
 		var data = fileSystem.readFileSync(studentData);
-		var jsonContent = JSON.parse(data);
+		var jsonData = JSON.parse(data);
 		var i,student;
-		for (i = 0 ; i < jsonContent.length ; i++ ){
+		for (i = 0 ; i < jsonData.length ; i++ ){
 			
-			if (jsonContent[i].id == id) {
-				console.log("Found id: " + jsonContent[i].id + "\nName: " + jsonContent[i].name);	
-				student = jsonContent[i];
+			if (jsonData[i].id == id) {
+				console.log("Found id: " + jsonData[i].id + "\nName: " + jsonData[i].name);	
+				student = jsonData[i];
 				return student;
 			}		
 		}
@@ -37,15 +34,14 @@ module.exports = class student {
 	showStudentsByYear(year){
 		console.log("Show student By year: ");
 		var data = fileSystem.readFileSync(studentData);
-		var jsonContent = JSON.parse(data);
+		var jsonData = JSON.parse(data);
 		var i;
-		for (i = 0 ; i < jsonContent.length ; i++ ){
-			if (jsonContent[i].year != year) {
-				//conosle.log(jsonContent[i].year);
-				jsonContent.splice(i--,1);
+		for (i = 0 ; i < jsonData.length ; i++ ){
+			if (jsonData[i].year != year) {
+				jsonData.splice(i--,1);
 			}		
 		}
-		console.log("Students that qualifies: "+ JSON.stringify(jsonContent) + "\n");
-		return jsonContent;
+		console.log("Students that qualifies: "+ JSON.stringify(jsonData) + "\n");
+		return jsonData;
 	}
 } 
